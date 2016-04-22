@@ -61,7 +61,8 @@
       },
       {
         name: "books",
-        type: "Book",
+        type: "Connection",
+        ofType: "Book",
         reverseName: "author"
       },
     ]
