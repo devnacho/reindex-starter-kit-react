@@ -1,3 +1,3 @@
 export default {
-  REINDEX_URL: '',
+  REINDEX_URL: 'https://molecular-copper-524.myreindex.com',
 };
