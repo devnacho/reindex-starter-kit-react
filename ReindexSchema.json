@@ -13,5 +13,57 @@
         unique: true
       }
     ]
+  },
+  {
+    name: "Book",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "title",
+        type: "String"
+      },
+      {
+        name: "inStock",
+        type: "Boolean"
+      },
+      {
+        "name": "author",
+        "type": "Author",
+        "reverseName": "books"
+      },
+    ]
+  },
+  {
+    name: "Author",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "fullName",
+        type: "String"
+      },
+      {
+        "name": "books",
+        "type": "Book",
+        "reverseName": "author"
+      },
+    ]
   }
 ]
