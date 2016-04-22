@@ -36,9 +36,9 @@
         type: "Boolean"
       },
       {
-        "name": "author",
-        "type": "Author",
-        "reverseName": "books"
+        name: "author",
+        type: "Author",
+        reverseName: "books"
       },
     ]
   },
@@ -60,9 +60,9 @@
         type: "String"
       },
       {
-        "name": "books",
-        "type": "Book",
-        "reverseName": "author"
+        name: "books",
+        type: "Book",
+        reverseName: "author"
       },
     ]
   }
